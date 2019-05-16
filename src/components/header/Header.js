@@ -8,9 +8,15 @@ class Header extends React.Component {
         <div className="language-options"></div>
         <nav className="menu">
           <ul className="menu__list">
-            <li className="menu__list-item">My story</li>
-            <li className="menu__list-item">Projects</li>
-            <li className="menu__list-item">Contact me</li>
+            <li className="menu__list-item">
+              <a href="#story" className="menu-link">My story</a>
+            </li>
+            <li className="menu__list-item">
+              <a href="#projects" className="menu-link">Projects</a>
+            </li>
+            <li className="menu__list-item">
+              <a href="#contact" className="menu-link">Contact me</a>
+            </li>
           </ul>
         </nav>
       </header>
