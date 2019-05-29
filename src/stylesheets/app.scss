@@ -6,4 +6,17 @@ body {
 
 .app {
   font-family: $font-main;
+  min-height: 100vh;
+
+  .wrapper {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0 20px;
+  }
+
+  @media all and (min-width: $bp-2) {
+    .wrapper {
+      margin: 0 45px;
+    }
+  }
 }

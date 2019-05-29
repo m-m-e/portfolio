@@ -3,24 +3,49 @@
 .header {
   height: 50px;
   background: $color-teal;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  box-sizing: border-box;
 
-.menu__list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.menu__list-item {
-  font-size: 18px;
-  padding-right: 30px;
-}
+  .header-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .menu__list-item {
+    font-size: $font-sm;
+    padding-left: 15px;
+  }
+  .menu__list-item:nth-child(1) {
+    padding: 0;
+  }
+  
+  .menu-link {
+    text-decoration: none;
+    color: $color-black;
+  }
 
-.menu-link {
-  text-decoration: none;
-  color: $color-black;
+  @media all and (min-width: $bp-2) {
+    .header-wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .menu__list-item {
+      font-size: $font-med;
+      padding-left: 20px;
+    }
+  }
+  @media all and (min-width: $bp-3) {
+    height: 75px;
+    
+    .menu__list-item {
+      font-size: $font-lg;
+      padding-left: 25px;
+    }
+  }
 }

@@ -1,0 +1,21 @@
+@import '../../stylesheets/variables';
+
+.main-content {
+  min-height: 100vh;
+  
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    font-size: $font-xlg;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 200px;
+    border-radius: 50%;
+  }
+}
