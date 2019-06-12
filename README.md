@@ -5,6 +5,3 @@ Also, it's still a work in progress, but feel free to contact me with any sugges
 
 ## Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-#Authors
-Me!

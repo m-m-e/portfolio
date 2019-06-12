@@ -1,21 +1,60 @@
 @import '../../stylesheets/variables';
 
-.main-content {
+.main__content {
   min-height: 100vh;
   
-  .main-wrapper {
+  .main__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .title {
-    font-size: $font-xlg;
-    text-align: center;
+  .aboutMe {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      font-size: $font-xlg;
+      text-align: center;
+      @media all and (min-width: $bp-2) {
+        font-size: $font-xxlg;
+      }
+    }
+  
+    .profile__image {
+      width: 250px;
+      border-radius: 50%;
+      @media all and (min-width: $bp-2) {
+        width: 400px;
+      }
+    }
+
+    .arrow__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 0;
+      
+      .down__arrow {
+        padding: 5px;
+        border: solid black 1px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        
+        @media all and (min-width: $bp-2) {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
   }
 
-  .profile-image {
-    width: 200px;
-    border-radius: 50%;
+  .projects {
+    .projects__container{
+      height: 600px;
+    }
   }
 }
