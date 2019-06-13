@@ -1,0 +1,33 @@
+@import '../../stylesheets/variables';
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .contact__list {
+    width: 100%;
+    max-width: 600px;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+  }
+  
+  .contact__list-item {
+    font-size: $font-med;
+
+    @media all and (min-width: $bp-2){
+      font-size: $font-lg;
+    }
+    @media all and (min-width: $bp-3){
+      font-size: $font-xlg;
+    }
+  }
+
+  .contact__link {
+    color: $color-teal;
+    margin: 0;
+  }
+}

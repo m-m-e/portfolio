@@ -1,0 +1,33 @@
+@import '../../stylesheets/variables';
+
+.footer {
+  background: $color-black;
+  height: 50px;
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu__list {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu__list-item {
+    padding:0;
+  }
+
+  .menu-link {
+    text-decoration: none;
+    color: $color-silver;
+    font-size: $font-sm;
+    font-weight: bold;
+  }
+}

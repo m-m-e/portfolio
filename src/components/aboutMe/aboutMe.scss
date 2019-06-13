@@ -26,14 +26,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
+    padding: 35px 0;
     
     .down__arrow {
       padding: 5px;
-      border: solid black 1px;
+      border: solid black 2px;
       border-radius: 50%;
       width: 30px;
       height: 30px;
+      position: absolute;
+      animation-name: arrow-point;
+      animation-duration: 3s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+
+      @keyframes arrow-point {
+        0% {
+          transform: translate(0, 100%);
+        }
+        50% {
+          transform: translate(0,0);
+        }
+        100% {
+          transform: translate(0, 100%);
+        }
+      }
       
       @media all and (min-width: $bp-2) {
         width: 50px;
