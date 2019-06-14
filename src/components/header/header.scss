@@ -19,6 +19,7 @@
   .menu__list-item {
     font-size: $font-sm;
     padding-left: 15px;
+    
   }
   .menu__list-item:nth-child(1) {
     padding: 0;
@@ -27,6 +28,16 @@
   .menu-link {
     text-decoration: none;
     color: $color-black;
+    display: inline-block;
+    transition: ease 0.1s;
+    &:focus{
+      border: 2px solid $color-black;
+    }
+    &:hover{
+      color: $color-white;
+      font-weight: bold;
+      transform: scale(1.2);
+    }
   }
 
   @media all and (min-width: $bp-2) {

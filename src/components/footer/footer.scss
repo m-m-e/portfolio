@@ -3,15 +3,33 @@
 .footer {
   background: $color-black;
   height: 50px;
-
+  .footer__menu {
+    width: 100%;
+    display: flex;
+    justify-content: center
+  }
+  
   .footer-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
+  .up__arrow i {
+    color: $color-silver;
+    font-size: $font-lg;
+    display: inline-block;
+    transition: ease 0.1s;
+
+    &:hover{
+      color: $color-pink;
+      transform: scale(1.2);
+    }
+  }
   .menu__list {
     width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
     list-style: none;
     margin: 0;
     padding: 10px;
@@ -23,11 +41,24 @@
   .menu__list-item {
     padding:0;
   }
-
+  
   .menu-link {
     text-decoration: none;
     color: $color-silver;
     font-size: $font-sm;
     font-weight: bold;
+    display: inline-block;
+    transition: ease 0.1s;
+
+    @media all and (min-width: $bp-2){
+      font-size: $font-med;
+    }
+    &:focus {
+      padding: 5px;
+    }
+    &:hover{
+      color: $color-pink;
+      transform: scale(1.2);
+    }
   }
 }

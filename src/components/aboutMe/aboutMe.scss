@@ -27,6 +27,12 @@
     justify-content: center;
     align-items: center;
     padding: 35px 0;
+    width: 62px;
+    height: 50px;
+    box-sizing: border-box;
+    &:focus{
+      border: 2px solid $color-black;
+    }
     
     .down__arrow {
       padding: 5px;
@@ -40,6 +46,10 @@
       animation-direction: alternate;
       animation-iteration-count: infinite;
       animation-timing-function: ease-in-out;
+
+      &:hover {
+        border: 2px solid $color-purple;
+      }
 
       @keyframes arrow-point {
         0% {

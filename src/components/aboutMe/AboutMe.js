@@ -9,7 +9,7 @@ class AboutMe extends React.Component {
       <section className="aboutMe">
         <h1 className="title">Megan M Edwards</h1>
         <img src={meg} alt="Megan Edwards" className="profile__image"/>
-        <a href="#story" className="arrow__container">
+        <a href="#story" className="arrow__container" title="Go straight to my story">
           <img src={arrow} alt="Go to next section" className="down__arrow"/>
         </a>
       </section>
