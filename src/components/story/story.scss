@@ -1,0 +1,37 @@
+@import '../../stylesheets/variables';
+
+.story{
+  margin-top: 100px;
+  width: 100%;
+  background: $color-purple;
+  color: $color-white;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .story__box {
+    max-width: 600px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .story__image{
+    width: 200px;
+    align-self: center;
+  }
+
+  @media all and (min-width: $bp-3){
+    .story__title{
+      font-size: $font-xlg;
+    }
+    .story__subtitle{
+      font-size: $font-lg;
+    }
+    .story__text{
+      font-size: $font-med;
+    }
+  }
+}
