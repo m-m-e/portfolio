@@ -1,11 +1,15 @@
 @import '../../stylesheets/variables';
 
 .projects {
-  .projects__container{
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding-top: 60px;
+
+  .projects__subtitle a {
+    text-decoration: none;
+    color: $color-pink;
+    &:focus {
+      outline: none;
+      border: 1px solid $color-grey-dark;
+    }
   }
 
   .skills__icons__box {

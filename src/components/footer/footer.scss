@@ -1,7 +1,7 @@
 @import '../../stylesheets/variables';
 
 .footer {
-  background: $color-black;
+  background: $color-grey-dark;
   height: 50px;
   .footer__menu {
     width: 100%;
@@ -16,7 +16,7 @@
   }
 
   .up__arrow i {
-    color: $color-silver;
+    color: $color-grey-light;
     font-size: $font-lg;
     display: inline-block;
     transition: ease 0.1s;
@@ -44,7 +44,7 @@
   
   .menu-link {
     text-decoration: none;
-    color: $color-silver;
+    color: $color-grey-light;
     font-size: $font-sm;
     font-weight: bold;
     display: inline-block;
@@ -54,6 +54,8 @@
       font-size: $font-med;
     }
     &:focus {
+      outline: none;
+      border: 2px solid $color-grey-light;
       padding: 5px;
     }
     &:hover{

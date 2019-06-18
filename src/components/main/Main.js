@@ -8,7 +8,7 @@ import Contact from '../contact/Contact';
 class Main extends React.Component {
   render() {
     return(
-      <main className="main__content">
+      <main className="main__content" id="topOfPage">
         <div className="wrapper main__wrapper">
           <AboutMe />
           <Story />

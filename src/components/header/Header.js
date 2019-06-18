@@ -4,7 +4,7 @@ import './header.scss';
 class Header extends React.Component {
   render() {
     return(
-      <header id="topOfPage" className="header">
+      <header className="header">
         <div className="wrapper header-wrapper">
           <div className="language-options"></div>
           <nav className="menu">

@@ -2,8 +2,11 @@
 
 .header {
   height: 50px;
+  width: 100%;
   background: $color-teal;
   box-sizing: border-box;
+  position: fixed;
+  opacity: 0.9;
 
   .header-wrapper {
     display: flex;
@@ -31,7 +34,8 @@
     display: inline-block;
     transition: ease 0.1s;
     &:focus{
-      border: 2px solid $color-black;
+      outline: none;
+      border: 2px solid $color-grey-dark;
     }
     &:hover{
       color: $color-white;
