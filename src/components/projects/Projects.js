@@ -1,6 +1,7 @@
 import React from 'react';
 import './projects.scss';
 import {projectData} from '../../data/projectData';
+import ProjectCard from '../projectCard/ProjectCard';
 import css from '../../images/icons/css3_logo.png';
 import git from '../../images/icons/Git_logo.png';
 import html from '../../images/icons/HTML_Logo.png'; 
@@ -30,11 +31,7 @@ class Projects extends React.Component {
           .map(item => {
             return(
               <li className="projects__list-item" key={item.id}>
-                <p className="project__name">{item.name}</p>
-                <p className="project__description">{item.description}</p>
-                <p className="project__date">{item.date}</p>
-                <a className="project__link" href={item.url}>{item.url}</a>
-                <a className="project__link-GH" href={item.urlGH}>{item.urlGH}</a>
+                <ProjectCard item={item} />
               </li> 
             )
             })}

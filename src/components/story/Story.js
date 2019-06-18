@@ -1,8 +1,8 @@
 import React from 'react';
 import './story.scss';
-import swansea from '../../images/swansea.jpg';
-import teaching from '../../images/teaching.jpg';
-import programming from '../../images/programming.jpg';
+import swansea from '../../images/story/swansea.jpg';
+import teaching from '../../images/story/teaching.jpg';
+import programming from '../../images/story/programming.jpg';
 import './story.scss';
 
 class Story extends React.Component {
