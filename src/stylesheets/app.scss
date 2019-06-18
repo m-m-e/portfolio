@@ -19,4 +19,17 @@ body {
       margin: 0 45px;
     }
   }
+
+  @media all and (min-width: $bp-3) {
+    .wrapper {
+      margin: 0 80px;
+    }
+  }
+
+  @media all and (min-width: $bp-4) {
+    .wrapper {
+      max-width: 1000px;
+      margin: auto;
+    }
+  }
 }

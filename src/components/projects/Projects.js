@@ -15,7 +15,7 @@ class Projects extends React.Component {
     return(
       <section id="projects" className="projects">
         <h2 className="projects__title">My projects</h2>
-        <h3 className="projects__subtitle">Here are a few of my individual projects. For group projects please see my CV! These were created using...</h3>
+        <h3 className="projects__subtitle">Here are a few of my individual projects. For group projects please see my <a href="https://www.linkedin.com/in/meganmyfanwyedwards/" title="Linked In - MME" target="_blank" rel="noopener noreferrer">LinkedIn</a>! These were created using...</h3>
         <div className="skills__icons__box">
           <img src={css} alt="CSS3" className="skills__icon"/>
           <img src={git} alt="Git" className="skills__icon"/>
