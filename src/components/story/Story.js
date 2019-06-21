@@ -2,7 +2,7 @@ import React from 'react';
 import './story.scss';
 import swansea from '../../images/story/swansea.jpg';
 import teaching from '../../images/story/teaching.jpg';
-import adalab from '../../images/story/logo-adalab.svg';
+import adalab from '../../images/story/logo-adalab.png';
 import './story.scss';
 
 class Story extends React.Component {
